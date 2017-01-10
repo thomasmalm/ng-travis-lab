@@ -1,0 +1,6 @@
+{
+  "name": "ng-travis-lab",
+  "devDependencies": {
+    "karma": "^1.3.0"
+  }
+}
