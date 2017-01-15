@@ -1,8 +1,10 @@
 {
   "name": "ng-travis-lab",
   "scripts": {
-    "start": "concurrently \"http-server -c-1\" \"karma start karma.conf.js\" ",
-    "test": "karma start karma.conf.js --browsers PhantomJS --single-run"
+    "start": "concurrently \"http-server -c-1\" \"npm test\" ",
+    "test": "karma start karma.conf.js",
+
+    "test-ci": "karma start karma.conf.js --browsers PhantomJS --single-run"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.1",
