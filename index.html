@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body ng-app="app">
+        <div ng-controller="AppController as vm">
+            <form>
+                <label for="radius">Radius</label>
+                <input id="radius" type="number" ng-model="vm.radius">
+                <button ng-click="vm.calcCircleArea()">Calculate</button>
+            </form>
+            <span>Area: {{ vm.result }}</span>
+        </div>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/app.controller.js"></script>
+        <script src="app/app.service.js"></script>
+    </body>
+</html>
